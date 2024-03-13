@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(175deg, rgb(100, 178, 209), rgb(233, 96, 233), rgb(249, 185, 195));
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    height: 500px;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 60px;
+    background: linear-gradient(127deg,rgb(237, 237, 162),skyblue);
+    padding: 7px 15px;
+}
+.weather{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(195, 228, 241);
+    border-radius: 30px;
+}
+.weather input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 15px 23px;
+}
+.weather button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background-color: rgb(123, 123, 219);
+    color: white;
+    padding: 13px 13px;
+    border-radius: 50px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.weather button:hover{
+    background-color: rgb(111, 111, 228);
+}
+
+.forcast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.forcast-image img{
+    height: 130px;
+    width: 130px;
+    filter: drop-shadow(1px 2px 1px #555);
+}
+.forcast-temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.forcast-temperature span{
+    font-size: 43px;
+    color: white;
+    text-shadow: 1px 1px 3px #555;
+}
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.extra-data img{
+    height: 70px;
+    width: 70px;
+    filter: drop-shadow(1px 2px 1px #555);
+}
+
+.extra-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.extra-data span{
+    font-size: 27px;
+    color: white;
+    text-shadow: 1px 1px 3px #555;
+    margin-top: 10px;
+}
+
+/* media query for weather app */
+
+@media (max-width:1048px){
+.main{
+        width: 35%;
+    }
+}
+
+@media (max-width:1025px){
+.extra{
+    gap: 20px;
+}
+}
+
+@media (max-width:1005px){
+.main{
+    width: 35%;
+}
+}
+
+@media (max-width:1005px){
+    .main{
+        width: 38%;
+    }
+    }
+
+
+@media (max-width:850px){
+    .main{
+        width: 40%;
+    }
+    .extra{
+        gap: 40px;
+    }
+    }
+@media (max-width:850px){
+.main{
+    width: 41%;
+}
+}
+
+@media (max-width:800px){
+    .main{
+        width: 45%;
+    }
+    }
+
+@media (max-width:750px){
+        .main{
+            width: 47%;
+        }
+}
+
+@media (max-width:730px){
+    .main{
+        width: 50%;
+    }
+    }
+
+    @media (max-width:650px){
+        .main{
+            width: 54%;
+        }
+}
+
+@media (max-width:620px){
+    .main{
+        width: 57%;
+    }
+}
+
+@media (max-width:595px){
+    .main{
+        width: 61%;
+    }
+}
+
+@media (max-width:550px){
+    .main{
+        width: 67%;
+    }
+}
+
+@media (max-width:520px){
+    .main{
+        width: 75%;
+    }
+}
+
+@media (max-width:470px){
+    .main{
+        width: 76%;
+    }
+    .forcast-image img {
+        height: 110px;
+        width: 110px;
+    }
+    .forcast-temperature span {
+        font-size: 35px;
+    }
+    .extra-data img {
+        height: 65px;
+        width: 65px;
+    }
+    .extra-data span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:385px){
+    .main{
+        width: 82%;
+    }
+}
+
+@media (max-width:365px){
+    .main{
+        width: 87%;
+    }
+}

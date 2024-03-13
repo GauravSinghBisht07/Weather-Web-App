@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Web-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main">
+        <div class="weather">
+            <input type="text" placeholder="Enter city" id="weather-input">
+            <button id="search"><i class='bx bx-search-alt-2'></i></button>
+        </div>
+        <div class="forcast">
+            <div class="forcast-image">
+                <img src="./images/sun.png" alt="weather images" class="icons">
+            </div>
+            <div class="forcast-temperature">
+                <span id="temperature">0°C</span>
+                <span id="city">City</span>
+            </div>
+        </div>
+        <div class="extra">
+            <div class="extra-data">
+                <img src="./images/humidity.png" alt="humidity">
+                <span id="humidity"></span>     
+            </div>
+            <div class="extra-data">
+                <img src="./images/storm.png" alt="wind">
+                <span id="wind"></span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
